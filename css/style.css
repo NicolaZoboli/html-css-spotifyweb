@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* REGOLE GENERALI */
+
+/* WRAPPER */
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+/* MAIN */
+
+main {
+  height: calc(100% - 90px);
+  background-color: #141922;
+  display: flex;
+}
+
+/* sezione navbar aside */
+
+main #navbar-aside {
+  height: 100%;
+  width: 200px;
+  background-color: black;
+}
+
+/* sezione content */
+
+main #content {
+  height: 100%;
+  width: calc(100% - 200px);
+}
+
+/* sottosezione upgrade */
+
+main #content #upgrade {
+  height: 90px;
+  background-color: #080b12;
+}
+
+/* sottosezione content main */
+
+main #content #content-main {
+  height: 100%;
+  background-color: inherit;
+}
+
+/* FOOTER */
+
+footer {
+  height: 90px;
+  background-color: #282828;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

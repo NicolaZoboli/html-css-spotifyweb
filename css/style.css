@@ -208,6 +208,7 @@ main #content #upgrade .upgrade-button:hover {
 
 main #content #content-main {
   height: calc(100% - 80px);
+  padding: 0 30px;
 }
 
 /* navbar */
@@ -246,9 +247,42 @@ main #content #content-main .navbar-content nav ul li a:hover {
   color: white;
 }
 
-/* sezione recently played */
+/* sezione albums*/
 
+main #content #content-main .albums .single-album {
+  width: calc(100% / 6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+main #content #content-main .albums .single-album h2 {
+  margin-bottom: 20px;
+}
+
+main #content #content-main .albums .single-album img {
+  width: 80%;
+}
+
+main #content #content-main .albums .single-album li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main #content #content-main .albums .single-album li span {
+  color: #797b80;
+}
+
+main #content #content-main .albums .single-album li > * {
+  margin-bottom: 10px;
+}
+
+main #content #content-main .albums .single-album ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* FOOTER */
 

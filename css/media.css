@@ -1,0 +1,164 @@
+/* MEDIA QUERIES */
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 0px) and (max-width : 767px) {
+
+  /* navbar laterale */
+
+  main #navbar-aside {
+    width: 50px;
+  }
+
+  main #navbar-logo,
+  main #navbar-aside-main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main #navbar-aside-main ul li a {
+    padding: 10px;
+  }
+
+  main #navbar-aside-main ul li a i {
+    padding: 0;
+  }
+
+  #navbar-logo h1,
+  #navbar-aside-main span,
+  #playlist,
+  #navbar-aside-down .text-navbar-down {
+    display: none;
+  }
+
+  #navbar-aside-down .download-app {
+    border: none;
+  }
+
+  /* main content */
+
+  /* navbar  */
+
+  main #content {
+    width: calc(100% - 50px);
+  }
+
+  main #content-main .navbar-content nav {
+    width: 100%;
+  }
+
+  /* albums */
+
+
+  #content-main .albums .single-album {
+    width: calc((100% / 2) - 20px);
+  }
+
+  footer #track,
+  footer #volume {
+    width: 30%;
+  }
+
+  footer #player {
+    width: 40%;
+  }
+
+  footer #track .track-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer #track .track-left {
+    width: 90%;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+  /* main content */
+
+  main #content-main .navbar-content nav {
+    width: 90%;
+  }
+
+  /* albums */
+
+  #content-main .albums .single-album {
+    width: 150px;
+  }
+
+  footer #track,
+  footer #volume {
+    width: 30%;
+  }
+
+  footer #player {
+    width: 40%;
+  }
+
+  footer #track .track-left {
+    width: 80%;
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+  /* main content */
+
+  main #content-main .navbar-content nav {
+    width: 90%;
+  }
+
+  /* albums */
+
+  #content-main .albums .single-album {
+    width: 200px;
+  }
+
+  footer #track,
+  footer #volume {
+    width: 25%;
+  }
+
+  footer #player {
+    width: 40%;
+  }
+
+  footer #track .track-left {
+    width: 70%;
+  }
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px){
+
+  /* main content */
+
+  main #content-main .navbar-content nav {
+    width: 70%;
+  }
+
+  #content-main .albums .single-album {
+    width: calc(100% / 7);
+  }
+
+  footer #track,
+  footer #volume {
+    width: 20%;
+  }
+
+  footer #player {
+    width: 40%;
+  }
+
+  footer #track .track-left {
+    width: 150px;
+  }
+
+}

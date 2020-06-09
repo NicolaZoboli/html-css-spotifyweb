@@ -221,13 +221,13 @@ main #content {
 }
 
 #content-main .navbar-content nav {
-  width: 40%;
+  width: 50%;
 }
 
 #content-main .navbar-content nav ul {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
@@ -237,8 +237,12 @@ main #content {
   padding: 30px 0;
 }
 
+#content-main .navbar-content nav ul li {
+  margin-bottom: 20px;
+}
+
 #content-main .navbar-content nav ul li a {
-  padding: 20px 0;
+  padding: 10px 15px;
   text-transform: uppercase;
   color: #797b80;
   font-weight: 600;
@@ -264,13 +268,13 @@ main #content {
 
 #content-main .albums {
   display: flex;
-  justify-content: flex-start;
+  justify-content: baseline;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 #content-main .albums .single-album {
-  width: calc(100% / 7);
-  margin-right: 30px;
+  margin-right: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,6 +343,13 @@ main #content {
   margin-bottom: 10px;
 }
 
+/* sottosezione "creato per" e "artisti popolari" */
+
+#content-main #creato-per .albums ,
+#content-main #artisti-popolari .albums {
+  justify-content: flex-start;
+}
+
 /* regole specifiche degli album */
 
 #content-main .albums .single-album ul li .img-album.heavy-metal {
@@ -404,23 +415,31 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 15%;
 }
 
 /* regole generali */
 
-#track .track-left,
 #track .track-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+#track .track-right > * {
+  margin-right: 10px;
+}
+
+#track .track-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#track .track-left > * {
+  margin-right: 10px;
 }
 
 /* foto album e titolo canzone */
-
-#track .track-left {
-  width: 150px;
-}
 
 #track .track-right {
   width: 50px;
@@ -431,17 +450,23 @@ footer {
   width: 50px;
 }
 
-#track .track-left h5 {
+#track .track-left .track-title h5 a {
   font-size: 18px;
   color: white;
 }
 
-#track .track-left span {
+#track .track-left .track-title a {
   color: #797b80;
   font-size: 14px;
 }
 
+#track .track-left .track-title > a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 /* icone cuore e cartella */
+
 
 #track .track-right i {
   font-size: 18px;
@@ -458,7 +483,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 40%;
 }
 
 /* controlli di traccia in alto */
@@ -525,7 +549,6 @@ footer {
 /* SEZIONE DI DESTRA CON IL VOLUME */
 
 #volume {
-  width: 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -559,29 +582,4 @@ footer {
 
 #volume .volume-control-bar:hover .current-volume {
   background-color: #b9f455;
-}
-
-
-
-
-/* MEDIA QUERIES */
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
 }

@@ -35,43 +35,13 @@ main {
   overflow: hidden;
 }
 
-/* sezione navbar aside */
+/* SEZIONE NAVBAR LATERALE */
 
 main #navbar-aside {
   height: 100%;
   width: 200px;
   background-color: black;
   overflow: hidden;
-}
-
-/* sottosezione navbar superiore */
-
-main #navbar-aside #navbar-aside-up {
-  width: 100%;
-  height: calc(100% - 160px);
-  overflow: hidden;
-}
-
-main #navbar-aside #navbar-aside-up ul li a {
-  display: flex;
-  align-items: center;
-  color: #797b80;
-  padding: 10px 20px;
-}
-
-main #navbar-aside #navbar-aside-up ul li a:hover {
-  border-left: 2px solid #adff2f;
-  color: white;
-}
-
-main #navbar-aside #navbar-aside-up ul li a span {
-  font-size: 16px;
-  font-weight: 600px;
-}
-
-main #navbar-aside #navbar-aside-up ul li a i {
-  font-size: 25px;
-  padding-right: 10px;
 }
 
 /* logo navbar */
@@ -94,7 +64,37 @@ main #navbar-aside #navbar-aside-up ul li a i {
   padding-right: 5px;
 }
 
-/* navbar home, cerca, la tua libreria */
+/* sottosezione navbar superiore */
+
+#navbar-aside-up {
+  width: 100%;
+  height: calc(100% - 160px);
+  overflow: hidden;
+}
+
+#navbar-aside-up ul li a {
+  display: flex;
+  align-items: center;
+  color: #797b80;
+  padding: 10px 20px;
+}
+
+#navbar-aside-up ul li a:hover {
+  border-left: 2px solid #adff2f;
+  color: white;
+}
+
+#navbar-aside-up ul li a span {
+  font-size: 16px;
+  font-weight: 600px;
+}
+
+#navbar-aside-up ul li a i {
+  font-size: 25px;
+  padding-right: 10px;
+}
+
+/* navbar di navigazione principale home, cerca, la tua libreria */
 
 #navbar-aside-main {
   overflow: hidden;
@@ -140,38 +140,38 @@ main #navbar-aside #navbar-aside-up ul li a i {
 
 /* sottosezione navbar inferiore */
 
-main #navbar-aside #navbar-aside-down {
+#navbar-aside-down {
   width: 100%;
   height: 80px;
   z-index: 950;
 }
 
-main #navbar-aside #navbar-aside-down a {
+#navbar-aside-down a {
   display: flex;
   align-items: center;
 }
 
-main #navbar-aside #navbar-aside-down i {
+#navbar-aside-down i {
   padding-right: 10px;
 }
 
-main #navbar-aside #navbar-aside-down .download-app {
+#navbar-aside-down .download-app {
   color: #797b80;
   margin: 0 20px;
   padding: 10px 0;
   border-bottom: 1px solid #797b80;
 }
 
-main #navbar-aside #navbar-aside-down .download-app:hover {
+#navbar-aside-down .download-app:hover {
   color: white;
 }
 
-main #navbar-aside #navbar-aside-down .user-profile {
+#navbar-aside-down .user-profile {
   color: white;
   padding: 10px 20px;
 }
 
-/* sezione content */
+/* SEZIONE CONTENT */
 
 main #content {
   height: 100%;
@@ -180,7 +180,7 @@ main #content {
 
 /* sottosezione upgrade */
 
-main #content #upgrade {
+#upgrade {
   height: 80px;
   background-color: #080b12;
   display: flex;
@@ -188,7 +188,7 @@ main #content #upgrade {
   align-items: center;
 }
 
-main #content #upgrade .upgrade-button {
+#upgrade .upgrade-button {
   color: white;
   font-size: 12px;
   border: 1px solid white;
@@ -200,30 +200,31 @@ main #content #upgrade .upgrade-button {
   letter-spacing: 0.1em;
 }
 
-main #content #upgrade .upgrade-button:hover {
+#upgrade .upgrade-button:hover {
   transform: scale(1.1);
 }
 
 /* sottosezione content-main */
 
-main #content #content-main {
+#content-main {
   height: calc(100% - 80px);
   padding: 0 30px;
   overflow: auto;
 }
 
 /* navbar */
-main #content #content-main .navbar-content {
+
+#content-main .navbar-content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main #content #content-main .navbar-content nav {
+#content-main .navbar-content nav {
   width: 40%;
 }
 
-main #content #content-main .navbar-content nav ul {
+#content-main .navbar-content nav ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -232,42 +233,42 @@ main #content #content-main .navbar-content nav ul {
   flex-wrap: wrap;
 }
 
-main #content #content-main .navbar-content nav ul{
+#content-main .navbar-content nav ul{
   padding: 30px 0;
 }
 
-main #content #content-main .navbar-content nav ul li a {
+#content-main .navbar-content nav ul li a {
   padding: 20px 0;
   text-transform: uppercase;
   color: #797b80;
   font-weight: 600;
 }
 
-main #content #content-main .navbar-content nav ul li a:hover {
+#content-main .navbar-content nav ul li a:hover {
   border-bottom: 2px solid #adff2f;
   color: white;
 }
 
-/* sezione albums*/
+/* SEZIONE ALBUMS */
 
-/* regole generali */
+/* regole generali degli albums*/
 
-main #content #content-main h2 {
+#content-main h2 {
   margin-bottom: 20px;
 }
 
-main #content #content-main p {
+#content-main p {
   color: #797b80;
   margin-bottom: 20px;
 }
 
-main #content #content-main .albums {
+#content-main .albums {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
 }
 
-main #content #content-main .albums .single-album {
+#content-main .albums .single-album {
   width: calc(100% / 7);
   margin-right: 30px;
   display: flex;
@@ -277,7 +278,7 @@ main #content #content-main .albums .single-album {
 }
 
 
-main #content #content-main .albums .single-album ul li .img-album {
+#content-main .albums .single-album ul li .img-album {
   width: 100%;
   padding-top: 100%;
   position: relative;
@@ -285,17 +286,17 @@ main #content #content-main .albums .single-album ul li .img-album {
   background-size: cover;
 }
 
-main #content #content-main .albums .single-album ul li h3 {
+#content-main .albums .single-album ul li h3 {
   font-size: 16px;
   text-align: center;
 }
 
-main #content #content-main .albums .single-album ul li span {
+#content-main .albums .single-album ul li span {
   text-align: center;
 
 }
 
-main #content #content-main .albums .single-album ul li .img-album .img-album-hover {
+#content-main .albums .single-album ul li .img-album .img-album-hover {
   display: none;
   position: absolute;
   top: 0;
@@ -305,83 +306,83 @@ main #content #content-main .albums .single-album ul li .img-album .img-album-ho
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-main #content #content-main .albums .single-album ul li .img-album .img-album-hover i {
+#content-main .albums .single-album ul li .img-album .img-album-hover i {
   font-size: 50px;
   color: #797b80;
 }
 
-main #content #content-main .albums .single-album ul li .img-album .img-album-hover i:hover {
+#content-main .albums .single-album ul li .img-album .img-album-hover i:hover {
   color: white;
 }
 
-main #content #content-main .albums .single-album ul li .img-album:hover .img-album-hover {
+#content-main .albums .single-album ul li .img-album:hover .img-album-hover {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-main #content #content-main .albums .single-album ul {
+#content-main .albums .single-album ul {
   width: 100%;
 }
 
-main #content #content-main .albums .single-album li {
+#content-main .albums .single-album li {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main #content #content-main .albums .single-album li span {
+#content-main .albums .single-album li span {
   color: #797b80;
 }
 
-main #content #content-main .albums .single-album li > * {
+#content-main .albums .single-album li > * {
   margin-bottom: 10px;
 }
 
-/* regole specifiche */
+/* regole specifiche degli album */
 
-main #content #content-main .albums .single-album ul li .img-album.heavy-metal {
+#content-main .albums .single-album ul li .img-album.heavy-metal {
   background-image: url(../img/metal_lifting.jpg);
 }
 
-main #content #content-main .albums .single-album ul li .img-album.stranger {
+#content-main .albums .single-album ul li .img-album.stranger {
   background-image: url(../img/stranger.jpeg);
 }
 
-main #content #content-main .albums .single-album ul li .img-album.quiet {
+#content-main .albums .single-album ul li .img-album.quiet {
   background-image: url(../img/aquietplace.jpeg);
 }
 
-main #content #content-main .albums .single-album ul li .img-album.split {
+#content-main .albums .single-album ul li .img-album.split {
   background-image: url(../img/split.jpeg);
 }
 
-main #content #content-main .albums .single-album ul li .img-album.cure {
+#content-main .albums .single-album ul li .img-album.cure {
   background-image: url(../img/cure.jpeg);
 }
 
-main #content #content-main .albums .single-album ul li .img-album.sinister {
+#content-main .albums .single-album ul li .img-album.sinister {
   background-image: url(../img/sinister.jpeg);
 }
 
-main #content #content-main .albums .single-album ul li .img-album.release {
+#content-main .albums .single-album ul li .img-album.release {
   background-image: url(../img/radar.jpeg);
 }
 
-main #content #content-main .albums .single-album ul li .img-album.daily-1 {
+#content-main .albums .single-album ul li .img-album.daily-1 {
   background-image: url(../img/mixdaily.jpeg);
 }
 
-main #content #content-main .albums .single-album ul li .img-album.lana {
+#content-main .albums .single-album ul li .img-album.lana {
   background-image: url(../img/youg.jpeg);
 }
 
-main #content #content-main .albums .single-album ul li .img-album.einaudi {
+#content-main .albums .single-album ul li .img-album.einaudi {
   background-image: url(../img/einaudi.jpeg);
 }
 
-main #content #content-main #artisti-popolari .albums .single-album ul li .img-album,
-main #content #content-main #artisti-popolari .albums .single-album ul li .img-album .img-album-hover {
+#content-main #artisti-popolari .albums .single-album ul li .img-album,
+#content-main #artisti-popolari .albums .single-album ul li .img-album .img-album-hover {
   border-radius: 50%;
 }
 
@@ -397,64 +398,72 @@ footer {
   padding: 20px;
 }
 
-/* sezione di sinistra con il titolo e la foto */
+/* SEZIONE DI SINISTRA CON IL TITOLO E LA FOTO */
 
-footer #track {
+#track {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 15%;
 }
 
-footer #track .track-left,
-footer #track .track-right {
+/* regole generali */
+
+#track .track-left,
+#track .track-right {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-footer #track .track-left {
+/* foto album e titolo canzone */
+
+#track .track-left {
   width: 150px;
 }
 
-footer #track .track-right {
+#track .track-right {
   width: 50px;
 }
 
 
-footer #track .track-left img {
+#track .track-left img {
   width: 50px;
 }
 
-footer #track .track-left h5 {
+#track .track-left h5 {
   font-size: 18px;
   color: white;
 }
 
-footer #track .track-left span {
+#track .track-left span {
   color: #797b80;
   font-size: 14px;
 }
 
-footer #track .track-right i {
+/* icone cuore e cartella */
+
+#track .track-right i {
   font-size: 18px;
   color: #797b80;
 }
 
-footer #track .track-right i:hover {
+#track .track-right i:hover {
   color: white;
 }
 
-/* sezione centrale con il player */
+/* SEZIONE CENTRALE CON IL PLAYER */
 
-footer #player {
+#player {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 40%;
 }
 
-footer #player .player-controls {
+/* controlli di traccia in alto */
+
+#player .player-controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -463,20 +472,22 @@ footer #player .player-controls {
   margin-bottom: 5px;
 }
 
-footer #player .player-controls i {
+#player .player-controls i {
   font-size: 15px;
 }
 
-footer #player .player-controls .fa-play-circle {
+#player .player-controls .fa-play-circle {
   font-size: 30px;
   transition: all 0.3s;
 }
 
-footer #player .player-controls .fa-play-circle:hover {
+#player .player-controls .fa-play-circle:hover {
   transform: scale(1.2);
 }
 
-footer #player .player-length {
+/* barra di controllo traccia */
+
+#player .player-length {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -484,65 +495,69 @@ footer #player .player-length {
   width: 80%;
 }
 
-footer #player .player-length span {
+#player .player-length span {
   width: 10%;
   font-size: 12px;
 }
 
-footer #player .player-length .total-length {
+#player .player-length .total-length {
   text-align: right;
 }
 
-footer #player .player-length .player-length-bar {
+#player .player-length .player-length-bar {
   width: 80%;
   height: 5px;
   background-color: #797b80;
   border-radius: 10px;
 }
 
-footer #player .player-length .player-length-bar .current-time-bar {
+#player .player-length .player-length-bar .current-time-bar {
   width: 30%;
   height: 100%;
   background-color: #c1c1c1;
   border-radius: 10px;
 }
 
-footer #player .player-length .player-length-bar:hover .current-time-bar {
+#player .player-length .player-length-bar:hover .current-time-bar {
   background-color: #b9f455;
 }
 
-/* sezione si destra con il volume */
+/* SEZIONE DI DESTRA CON IL VOLUME */
 
-footer #volume {
+#volume {
   width: 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-footer #volume .volume-icons {
+/* icone a sinistra */
+
+#volume .volume-icons {
   width: 10%;
 }
 
-footer #volume .volume-icons i {
+#volume .volume-icons i {
   color: white;
 }
 
-footer #volume .volume-control-bar {
+/* barra di controllo volume a destra */
+
+#volume .volume-control-bar {
   width: 50%;
   height: 5px;
   background-color: #797b80;
   border-radius: 10px;
 }
 
-footer #volume .volume-control-bar .current-volume {
+#volume .volume-control-bar .current-volume {
   width: 30%;
   height: 100%;
   background-color: #c1c1c1;
   border-radius: 10px;
 }
 
-footer #volume .volume-control-bar:hover .current-volume {
+#volume .volume-control-bar:hover .current-volume {
   background-color: #b9f455;
 }
 

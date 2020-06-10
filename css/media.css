@@ -84,7 +84,7 @@
   }
 
   footer #track .track-left {
-    width: 90%;
+    width: 100%;
   }
 
   footer #track .track-left img {
@@ -107,7 +107,7 @@
   }
 
   footer #player .player-controls {
-    width: 80%;
+    width: 70%;
   }
 
   footer #player .player-controls i {
@@ -143,10 +143,6 @@
 
   /* main content */
 
-  main #content-main .navbar-content nav {
-    width: 90%;
-  }
-
   /* albums */
 
   #content-main .albums .single-album {
@@ -165,7 +161,7 @@
   }
 
   footer #track .track-left {
-    width: 80%;
+    width: 70%;
   }
 
   footer #player .player-controls {
@@ -178,10 +174,6 @@
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 
   /* main content */
-
-  main #content-main .navbar-content nav {
-    width: 90%;
-  }
 
   /* albums */
 
@@ -215,10 +207,6 @@
 
   /* main content */
 
-  main #content-main .navbar-content nav {
-    width: 70%;
-  }
-
   #content-main .albums .single-album {
     width: calc(100% / 7);
   }
@@ -233,7 +221,7 @@
   }
 
   footer #track .track-left {
-    width: 150px;
+    width: 60%;
   }
 
 }

@@ -423,6 +423,14 @@ footer {
   padding: 20px;
 }
 
+footer .bar-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  display: none;
+}
+
 /* SEZIONE DI SINISTRA CON IL TITOLO E LA FOTO */
 
 #track {
@@ -554,10 +562,17 @@ footer {
   height: 100%;
   background-color: #c1c1c1;
   border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #player .player-length .player-length-bar:hover .current-time-bar {
   background-color: #b9f455;
+}
+
+#player .player-length .player-length-bar:hover .bar-circle {
+  display: block;
 }
 
 /* SEZIONE DI DESTRA CON IL VOLUME */
@@ -592,8 +607,15 @@ footer {
   height: 100%;
   background-color: #c1c1c1;
   border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 #volume .volume-control-bar:hover .current-volume {
   background-color: #b9f455;
+}
+
+#volume .volume-control-bar:hover .bar-circle {
+  display: block;
 }

@@ -103,7 +103,7 @@
 
             <a class="user-profile" href="#">
               <span><i class="fas fa-user-circle"></i></span>
-              <span class="text-navbar-down">John Doe</span>
+              <span class="text-navbar-down" id="user-name-navbar"></span>
             </a>
           </div>
         </section>
@@ -231,7 +231,7 @@
             <!-- divisione album creati per l'utente -->
 
             <div id="creato-per">
-              <h2>Creato per John Doe</h2>
+              <h2>Creato per <span id="user-name"></span></h2>
               <p>Più ascolti, più accurati saranno i suggerimenti</p>
               <div class="albums">
 
@@ -339,7 +339,9 @@
             <span class="current-time">0:25</span>
 
             <a class="player-length-bar" href="#">
-              <div class="current-time-bar"></div>
+              <div class="current-time-bar">
+                <div class="bar-circle"></div>
+              </div>
             </a>
             <span class="total-length">4:35</span>
           </div>
@@ -352,13 +354,19 @@
           <a class="volume-icons" href="#"><i class="fas fa-tv"></i></a>
           <a class="volume-icons" href="#"><i class="fas fa-volume-up"></i></a>
           <a class="volume-control-bar" href="#">
-            <div class="current-volume"></div>
+            <div class="current-volume">
+              <div class="bar-circle"></div>
+            </div>
           </a>
         </div>
 
       </footer>
 
     </div>
+
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
 
   </body>
 </html>
